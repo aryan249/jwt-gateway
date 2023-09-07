@@ -91,5 +91,3 @@ describe('Gateway integration', () => {
     expect(res.headers['x-request-id']).toBe(customId);
   });
 });
-// Rate limiting integration test
-// RBAC enforcement integration test
