@@ -6,3 +6,4 @@
 // cors installed
 // CORS configured from route config
 // jsonwebtoken v9.0.2
+// winston v3.11.0
