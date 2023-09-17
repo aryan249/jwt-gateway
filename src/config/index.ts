@@ -35,3 +35,4 @@ export function loadConfig(routesPath?: string): GatewayConfig {
     services,
   };
 }
+// Support environment overrides
