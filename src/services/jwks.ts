@@ -121,3 +121,4 @@ export async function verifyToken(
   }
 }
 // Token expiration is validated during verification
+// Redis-based JWKS key caching
