@@ -26,3 +26,4 @@ const config: Config = {
 };
 
 export default config;
+// Coverage reporting enabled
