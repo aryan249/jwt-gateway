@@ -65,3 +65,4 @@ export function rateLimiter(config: RateLimitConfig) {
     }
   };
 }
+// Per-route rate limit configuration
