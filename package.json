@@ -1,0 +1,54 @@
+{
+  "name": "jwt-gateway",
+  "version": "1.0.0",
+  "description": "Production-grade API gateway middleware with JWT/JWKS validation, RBAC, Redis caching, and rate limiting",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' 'test/**/*.ts' --fix",
+    "test": "jest --config jest.config.ts",
+    "test:unit": "jest --config jest.config.ts --testPathPattern=test/unit",
+    "test:integration": "jest --config jest.config.ts --testPathPattern=test/integration",
+    "test:coverage": "jest --config jest.config.ts --coverage"
+  },
+  "dependencies": {
+    "@sentry/node": "^7.100.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "http-proxy-middleware": "^3.0.0",
+    "ioredis": "^5.3.2",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.11.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/js-yaml": "^4.0.9",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.0",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "ioredis-mock": "^8.9.0",
+    "jest": "^29.7.0",
+    "nock": "^13.4.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
