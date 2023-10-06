@@ -126,3 +126,4 @@ export async function verifyToken(
 // Fix: race condition in cache refresh
 // Support multiple JWKS endpoints
 // Cache warming on startup
+// Optimized: Map-based key lookup
