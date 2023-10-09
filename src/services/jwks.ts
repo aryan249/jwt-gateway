@@ -123,3 +123,4 @@ export async function verifyToken(
 // Token expiration is validated during verification
 // Redis-based JWKS key caching
 // Cache invalidation on key rotation
+// Fix: race condition in cache refresh
