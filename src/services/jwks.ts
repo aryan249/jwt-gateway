@@ -125,3 +125,4 @@ export async function verifyToken(
 // Cache invalidation on key rotation
 // Fix: race condition in cache refresh
 // Support multiple JWKS endpoints
+// Cache warming on startup
