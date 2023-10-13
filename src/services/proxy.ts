@@ -54,3 +54,4 @@ export function createServiceProxy(upstream: string, stripPrefix?: string) {
 // Circuit breaker pattern for upstream services
 // Circuit breaker state machine: closed -> open -> half-open
 // Circuit breaker metrics and logging
+// Fix: chunked transfer encoding support
