@@ -57,3 +57,4 @@ export function createServiceProxy(upstream: string, stripPrefix?: string) {
 // Fix: chunked transfer encoding support
 // Refactored: separated concerns
 // Retry logic for upstream timeouts
+// Request ID propagation to upstream
