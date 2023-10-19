@@ -1,2 +1,3 @@
 // JWT and JWKS dependencies installed
 // http-proxy-middleware installed
+// ioredis installed
