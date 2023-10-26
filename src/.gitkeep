@@ -2,3 +2,4 @@
 // http-proxy-middleware installed
 // ioredis installed
 // helmet installed
+// Helmet configured with strict CSP
