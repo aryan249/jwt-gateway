@@ -1,3 +1,4 @@
 // Jest + ts-jest installed
 // test scripts added
 // supertest installed
+// nock installed
