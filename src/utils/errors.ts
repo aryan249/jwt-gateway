@@ -34,3 +34,4 @@ export class ServiceUnavailableError extends AppError {
   }
 }
 // ValidationError for request validation failures
+// Refactored: shared base class
