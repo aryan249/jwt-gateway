@@ -50,11 +50,3 @@ export function createServiceProxy(upstream: string, stripPrefix?: string) {
 
   return createProxyMiddleware(options);
 }
-// Strip sensitive headers before proxying
-// Circuit breaker pattern for upstream services
-// Circuit breaker state machine: closed -> open -> half-open
-// Circuit breaker metrics and logging
-// Fix: chunked transfer encoding support
-// Refactored: separated concerns
-// Retry logic for upstream timeouts
-// Request ID propagation to upstream

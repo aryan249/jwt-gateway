@@ -31,4 +31,3 @@ services:
       windowMs: 60000
       max: 200
     stripPrefix: false
-# Request timeout configuration per route

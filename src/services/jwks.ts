@@ -120,10 +120,3 @@ export async function verifyToken(
     throw new AuthenticationError(`Token verification failed: ${(err as Error).message}`);
   }
 }
-// Token expiration is validated during verification
-// Redis-based JWKS key caching
-// Cache invalidation on key rotation
-// Fix: race condition in cache refresh
-// Support multiple JWKS endpoints
-// Cache warming on startup
-// Optimized: Map-based key lookup

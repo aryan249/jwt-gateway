@@ -23,5 +23,3 @@ export const routesConfigSchema = z.object({
 });
 
 export type RoutesConfig = z.infer<typeof routesConfigSchema>;
-// Fix: validate nested route objects
-// Improved error messages for validation

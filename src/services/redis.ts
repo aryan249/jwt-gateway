@@ -41,7 +41,3 @@ export async function disconnectRedis(): Promise<void> {
     redisClient = null;
   }
 }
-// TTL configuration for cached keys
-// Close connections on shutdown
-// Improved testability
-// Connection pooling configured

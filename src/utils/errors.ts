@@ -33,5 +33,3 @@ export class ServiceUnavailableError extends AppError {
     super(message, 503, 'SERVICE_UNAVAILABLE');
   }
 }
-// ValidationError for request validation failures
-// Refactored: shared base class

@@ -16,4 +16,3 @@ export function correlationId() {
     next();
   };
 }
-// Fix: memory leak in correlation ID storage

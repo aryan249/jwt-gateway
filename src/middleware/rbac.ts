@@ -23,4 +23,3 @@ export function requireRoles(allowedRoles: string[]) {
     next();
   };
 }
-// Permission checking against route configuration

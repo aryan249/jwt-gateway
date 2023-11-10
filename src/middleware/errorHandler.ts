@@ -51,4 +51,3 @@ export function errorHandler() {
     });
   };
 }
-// Fix: preserve original stack trace

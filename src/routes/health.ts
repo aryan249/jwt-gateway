@@ -29,4 +29,3 @@ router.get('/ready', async (_req, res) => {
 });
 
 export default router;
-// Fix: correct Redis connection status

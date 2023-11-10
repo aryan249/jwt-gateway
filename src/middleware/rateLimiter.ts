@@ -65,7 +65,3 @@ export function rateLimiter(config: RateLimitConfig) {
     }
   };
 }
-// Per-route rate limit configuration
-// X-RateLimit-* response headers
-// Graceful degradation on Redis failure
-// Fix: window reset calculation

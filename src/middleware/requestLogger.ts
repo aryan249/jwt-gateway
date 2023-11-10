@@ -21,5 +21,3 @@ export function requestLogger() {
     next();
   };
 }
-// Request body sanitization before logging
-// Request timeout middleware
