@@ -84,3 +84,4 @@ spec:
             periodSeconds: 3
             failureThreshold: 10
 # Liveness and readiness probes configured
+# Environment variables from ConfigMap
