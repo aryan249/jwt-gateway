@@ -56,3 +56,4 @@ export function createServiceProxy(upstream: string, stripPrefix?: string) {
 // Circuit breaker metrics and logging
 // Fix: chunked transfer encoding support
 // Refactored: separated concerns
+// Retry logic for upstream timeouts
