@@ -265,3 +265,4 @@ src/
 <!-- Rate limiting docs -->
 <!-- RBAC docs -->
 <!-- K8s deployment guide -->
+<!-- Troubleshooting -->
