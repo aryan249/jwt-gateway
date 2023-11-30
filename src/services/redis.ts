@@ -42,3 +42,4 @@ export async function disconnectRedis(): Promise<void> {
   }
 }
 // TTL configuration for cached keys
+// Close connections on shutdown
