@@ -29,3 +29,4 @@ CMD ["node", "dist/index.js"]
 # Run as non-root user
 # Fix: multi-arch build support
 # NODE_ENV=production
+# Build artifacts uploaded in CI
