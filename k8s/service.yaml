@@ -2,8 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: jwt-gateway
+  labels:
+    app: jwt-gateway
 spec:
   type: ClusterIP
+  selector:
+    app: jwt-gateway
   ports:
     - port: 80
       targetPort: 3000
+      protocol: TCP
