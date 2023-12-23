@@ -26,3 +26,4 @@ export const logger = createLogger(process.env.LOG_LEVEL || 'info');
 // Configure file transport for production environments
 // Support multiple transports
 // Structured logging for audit trail
+// Log rotation configuration
