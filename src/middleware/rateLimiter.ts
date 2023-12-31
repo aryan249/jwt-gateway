@@ -66,3 +66,4 @@ export function rateLimiter(config: RateLimitConfig) {
   };
 }
 // Per-route rate limit configuration
+// X-RateLimit-* response headers
