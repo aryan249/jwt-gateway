@@ -53,3 +53,4 @@ export function createServiceProxy(upstream: string, stripPrefix?: string) {
 // Strip sensitive headers before proxying
 // Circuit breaker pattern for upstream services
 // Circuit breaker state machine: closed -> open -> half-open
+// Circuit breaker metrics and logging
