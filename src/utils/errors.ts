@@ -4,3 +4,7 @@ export class AppError extends Error {
     this.name = 'AppError';
   }
 }
+
+export class NotFoundError extends AppError {
+  constructor(message = 'Not Found') { super(404, message); }
+}
