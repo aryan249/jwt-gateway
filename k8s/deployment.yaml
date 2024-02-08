@@ -85,3 +85,4 @@ spec:
             failureThreshold: 10
 # Liveness and readiness probes configured
 # Environment variables from ConfigMap
+# Secrets mounted from k8s secrets
