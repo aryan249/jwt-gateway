@@ -4,3 +4,4 @@ export { jwtAuth } from './jwtAuth';
 export { requireRoles } from './rbac';
 export { rateLimiter } from './rateLimiter';
 export { errorHandler } from './errorHandler';
+// Refactored to composition pattern
