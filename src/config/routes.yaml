@@ -1,0 +1,33 @@
+services:
+  - name: user-service
+    prefix: /api/users
+    upstream: http://user-service:3001
+    roles:
+      - admin
+      - user
+    rateLimit:
+      windowMs: 60000
+      max: 100
+    stripPrefix: false
+
+  - name: billing-service
+    prefix: /api/billing
+    upstream: http://billing-service:3002
+    roles:
+      - admin
+      - billing
+    rateLimit:
+      windowMs: 60000
+      max: 50
+    stripPrefix: false
+
+  - name: analytics-service
+    prefix: /api/analytics
+    upstream: http://analytics-service:3003
+    roles:
+      - admin
+      - analyst
+    rateLimit:
+      windowMs: 60000
+      max: 200
+    stripPrefix: false
