@@ -261,8 +261,3 @@ src/
 - **Jest + Supertest** - Unit and integration testing
 - **Docker + Kubernetes** - Container deployment with PDB
 
-
-<!-- Rate limiting docs -->
-<!-- RBAC docs -->
-<!-- K8s deployment guide -->
-<!-- Troubleshooting -->
