@@ -41,3 +41,4 @@ export async function disconnectRedis(): Promise<void> {
     redisClient = null;
   }
 }
+// TTL configuration for cached keys
