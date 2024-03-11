@@ -31,3 +31,4 @@ export function captureError(error: Error, context?: Record<string, unknown>): v
 }
 
 export { Sentry };
+// Sentry request and error handlers
