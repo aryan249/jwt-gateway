@@ -32,4 +32,3 @@ services:
 
 volumes:
   redis-data:
-# Volume mounts for development
