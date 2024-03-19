@@ -36,3 +36,4 @@ export function createGatewayRouter(config: GatewayConfig): Router {
 }
 // Add X-Forwarded-For and X-Request-ID headers
 // POST /admin/reload endpoint
+// Admin endpoints secured with separate auth
