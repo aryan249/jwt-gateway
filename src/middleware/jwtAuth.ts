@@ -23,3 +23,4 @@ export function jwtAuth(issuer: string, audience: string) {
     }
   };
 }
+// Validate issuer and audience claims
