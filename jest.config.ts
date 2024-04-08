@@ -26,5 +26,3 @@ const config: Config = {
 };
 
 export default config;
-// Coverage reporting enabled
-// Separate unit and integration test paths
