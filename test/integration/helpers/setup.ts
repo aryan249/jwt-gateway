@@ -40,3 +40,4 @@ export async function stopJwksServer(): Promise<void> {
     }
   });
 }
+// Common test helpers extracted
