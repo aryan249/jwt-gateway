@@ -92,3 +92,4 @@ describe('Gateway integration', () => {
   });
 });
 // Rate limiting integration test
+// RBAC enforcement integration test
