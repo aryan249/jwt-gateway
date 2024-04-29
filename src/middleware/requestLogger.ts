@@ -1,10 +1,23 @@
 import { Request, Response, NextFunction } from 'express';
 import { logger } from '../utils/logger';
 
-export const requestLogger = (req: Request, res: Response, next: NextFunction): void => {
-  const start = Date.now();
-  res.on('finish', () => {
-    logger.info('request completed', { method: req.method, url: req.url, duration: Date.now() - start });
-  });
-  next();
-};
+export function requestLogger() {
+  return (req: Request, res: Response, next: NextFunction): void => {
+    const start = Date.now();
+
+    res.on('finish', () => {
+      const duration = Date.now() - start;
+      logger.info('request completed', {
+        method: req.method,
+        url: req.originalUrl,
+        status: res.statusCode,
+        duration,
+        correlationId: req.correlationId,
+        userAgent: req.headers['user-agent'],
+        contentLength: res.getHeader('content-length'),
+      });
+    });
+
+    next();
+  };
+}
