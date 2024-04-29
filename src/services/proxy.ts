@@ -50,3 +50,4 @@ export function createServiceProxy(upstream: string, stripPrefix?: string) {
 
   return createProxyMiddleware(options);
 }
+// Strip sensitive headers before proxying
