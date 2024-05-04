@@ -4,3 +4,4 @@
 // helmet installed
 // Helmet configured with strict CSP
 // cors installed
+// CORS configured from route config
