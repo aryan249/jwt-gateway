@@ -120,3 +120,4 @@ export async function verifyToken(
     throw new AuthenticationError(`Token verification failed: ${(err as Error).message}`);
   }
 }
+// Token expiration is validated during verification
