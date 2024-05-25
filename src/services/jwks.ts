@@ -124,3 +124,4 @@ export async function verifyToken(
 // Redis-based JWKS key caching
 // Cache invalidation on key rotation
 // Fix: race condition in cache refresh
+// Support multiple JWKS endpoints
