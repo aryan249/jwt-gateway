@@ -1,8 +1,18 @@
 import { Request, Response, NextFunction } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 
-export const correlationId = (req: Request, _res: Response, next: NextFunction): void => {
-  const id = req.headers['x-correlation-id'] as string || uuidv4();
-  req.correlationId = id;
-  next();
-};
+const MAX_ID_LENGTH = 128;
+
+function isValidCorrelationId(id: string): boolean {
+  return id.length > 0 && id.length <= MAX_ID_LENGTH;
+}
+
+export function correlationId() {
+  return (req: Request, res: Response, next: NextFunction): void => {
+    const incoming = req.headers['x-request-id'] as string | undefined;
+    const id = incoming && isValidCorrelationId(incoming) ? incoming : uuidv4();
+    req.correlationId = id;
+    res.setHeader('X-Request-ID', id);
+    next();
+  };
+}
