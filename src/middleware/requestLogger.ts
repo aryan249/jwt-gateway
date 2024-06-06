@@ -21,3 +21,4 @@ export function requestLogger() {
     next();
   };
 }
+// Request body sanitization before logging
