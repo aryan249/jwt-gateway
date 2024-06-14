@@ -28,3 +28,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 CMD ["node", "dist/index.js"]
 # Run as non-root user
 # Fix: multi-arch build support
+# NODE_ENV=production
